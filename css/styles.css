@@ -1,7 +1,10 @@
 /* Abulmohsen Alfreh */
-/* ID: 439010208 */
 
 * {box-sizing: border-box;}
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     background-image: linear-gradient(#22206C,#E3E3E3);
@@ -12,6 +15,26 @@ body {
     background-position: top;
     background-size: contain;
     background-attachment: scroll;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: red;
+    cursor: pointer;
+    /* z-index: 99; */
+    /* padding: 1px; */
+    /* border-radius: 100px; */
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+  
+#myBtn:hover {
+    fill: #555;
+    background-color: #555;
 }
 
 .bg
@@ -37,17 +60,11 @@ body {
   }
 
   #navbar img {
-    height: 20px;
+    height: 25px;
     float: right;
     margin-top: 35px;
     margin-right: 35px;
   }
-  
-  /* #navbar #logo {
-    width: 90px;
-    margin-left: 1%;
-    transition: 0.4s;
-  } */
 
   #navbar-right {
     float: right;
@@ -70,7 +87,6 @@ body {
 /*-----------------------------------------------------about-----------------------------------------------------*/
 
 .about {
-    /* background-color: rgb(253, 250, 248); */
     text-align: left;
     width: 30%;
     display: flex;
@@ -88,7 +104,6 @@ body {
     font-size: 80px;
     font-family: serif;
     margin: 45% 0% 0% 5%;
-    /* padding-bottom: 5px; */
 }
 
 .about p {
@@ -122,11 +137,6 @@ body {
   .projects a:hover {
     color: #7975e7;
   }
-  
-  /* .projects a.active {
-    color: #827fd6;
-    font-weight: bolder;
-  } */
 
   .projects img {
     fill: #827fd6;
@@ -137,26 +147,40 @@ body {
 
 .topapp {
     margin-top: 10%;
-}
-.topapp h2, h3, p {
-    text-align: center;
-}
+  }
 
-/* .topapp h3,p {
-    margin-left: 48%;
-    width: 500px;
-} */
+.topapp {
+    text-align: center;
+  }
 
 .topapp h2 {
     color: white;
-    font-size: 35px;
-    /* font-weight: 300; */
+    font-size: 33px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3%;
+    /* margin-bottom: 10%; */
   }
+
+  /* --------------------------------- */
+
+/* .circles {
+    width: 10px;
+    margin: 0px auto;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.circles img {
+    width: 5px;
+    padding-bottom: 50px;
+} */
+
+/* --------------------------------- */
 
 .topapp h3 {
     color: white;
     font-size: 25px;
-    /* font-weight: 300; */
   }
 
 .topapp p {
@@ -165,195 +189,87 @@ body {
     font-weight: 300;
   }
 
-.topapp img {
-    height: 540px;
-    margin-left: 7%;
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box{
+    width: 250px;
+    margin: 0 10px;
+    transition: 1s;
+}
+
+.box img{
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 45px;
+}
+
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
 }
 
 /*---------------------------------------------------other apps---------------------------------------------------*/
 
-.servicessec {
-    display: flex;
-    background-color: rgb(253, 250, 248);
-    height: 500px;
-    margin: 10% 0% 10% 0%;
-}
- 
-.services {
-    width: 100%;
-    margin: 10% 10% 0.5% 100%;
-    align-content: center;
-}
-  
-.serviceimage {
-    width: 50px;
-}
-  
-.services div {
-    display: inline-block;
-    width: 100%;
-}
-  
-.services p {
+.otherapps {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    background-color:white;
+    height: auto;
+    text-align: center;
+  }
+
+.otherapps h2 {
+    color: #5C5B90;
+    font-size: 33px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5%;
+  }
+
+.otherapps h3 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    /* margin-top: 10%; */
+  }
+
+.otherapps p {
+    color: rgb(0, 0, 0);
     font-size: 20px;
-    font-weight: 500;
-    color: #101010;
-}
-  
-.services .bold {
-    font-weight: 900;
-}
+    font-weight: 300;
+    padding-bottom: 1%;
+  }
 
-/*--------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------Feedback page-------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------*/
-
-.feedback {
-    background-color: #e9e7e3;
-    height: 500px;
-}
-
-.feedback h1 {
-    margin-left: 1%;
-}
-
-.feedback div {   
-    padding: 3% 2%;
-    margin: 0% 10%;
-}
-
-input[type=text], input[type=email], textarea{
-    display: block;
-    margin: 1%;
-    padding: 1% 3%;
-    width: 50%;
-    border: 1px solid rgb(216, 215, 215);
-    border-radius: 4px;
-}
-
-textarea {
-    resize: none;
-}
-
-input[type=submit] {
-    background-color:rgb(114, 86, 30);
-    padding: 1% 3%;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-input::placeholder {
-    color: rgb(190, 190, 190);
-    font-size: 14px;
-    font-family: 'Arial';
-}
-
-textarea::placeholder {
-    color: rgb(190, 190, 190);
-    font-size: 14px;
-    font-family: 'Arial';
-}
-
-#sub {
-    margin-left: 1%;
-}
-
-/*--------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------Login Page--------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------*/
-
-.mainwrap {
-    background: #e9e7e3;
-    width:100%;
-    height: 690px;
+.pptcnt {
+    width: fit-content;
+    /* padding: 2px; */
+    background-color: #7f7f7f;
+    margin: 10px auto;
     display: flex;
-    align-items: center;
-}
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+    /* justify-content: center; */
+    /* box-shadow: gray; */
+  }
 
-.boxcontainer {
-    display: flex;
-    width: 36%;
-    height:470px;
-    background: white;
-    margin-left: 7%;
-}
-
-.midcontainer {
-    margin-top: 1%;
-    margin-left: 10%;
-}
-
-.midcontainer h1 {
-    color:rgb(152, 114, 36);
-    font-size: 35px;
-}
-
-.midcontainer .form label {
-    font-size: medium;
-    color: #101010;
-    font-weight: 500;
-}
-
-.midcontainer .form input {
-    width:350px;
-    height:35px;
-    margin-right: 50px;
-    color:rgb(155, 152, 152);
-    padding-left: 5px;
-    border-radius: 6px;
-    border: 1px solid rgb(216, 215, 215);
-}
-
-.midcontainer .form input::placeholder {
-    color: rgb(190, 190, 190);
-    font-size: small;
-    padding: 2%;
-}
-
-.frgtpw {
-    color:rgb(128, 128, 128);
-    font-size: 12px;
-    text-decoration: none;
-    margin-left: 1%;
-}
-
-.midcontainer .form .loginbtn {
-    padding:10px;
-    cursor: pointer;
-    width:358px;
-    font-size: 16px;
-    margin-top: 25px;
-    background-color:rgb(114, 86, 30);
-    color: rgb(247, 244, 244);
-    border-radius:6px;
-    border: none;
-}
-
-.signup {
-    width: 100%;
-    font-size: 13px;
-    font-weight: 400;
-    color: rgb(158, 158, 158);
-    margin-top: 99%;
-}
-
-.signupbtn {
-    text-decoration: none;
-    padding: 4px 8px;
-    font-size: 12px;
-    margin-left: 8px;
-}
+/* .pptcnt video {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+} */
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------*/
 
-footer {
-    background: #41362b;
+/* footer {
     color: white;
     padding: 30px;
-    height: 500px;
+    height: 400px;
 }
 
 .subscribe {
@@ -398,4 +314,4 @@ footer {
     margin: 0.5%;
     width: 2%;
     height: auto;
-}
+} */
