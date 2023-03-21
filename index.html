@@ -8,9 +8,6 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&display=swap" rel="stylesheet">
-        
-
-        <script type="text/javascript" src="js/maria_hotels.js"></script>
     </head>
 
     
@@ -23,8 +20,8 @@
                     <a href="https://www.linkedin.com/in/abdulmohsen-alfreh-a78115228/"  target="_blank">
                         <img src="images/linkedin.svg" alt="linkedin"></a>
 
-                    <a href="https://twitter.com/MHSNFRH"  target="_blank">
-                        <img src="images/twitter.svg" alt="twitter"></a>
+                    <!-- <a href="https://twitter.com/MHSNFRH"  target="_blank">
+                        <img src="images/twitter.svg" alt="twitter"></a> -->
 
                     <a href="mailto:abdul-muhsen@hotmail.com"  target="_blank">
                         <img src="images/email.svg" alt="email"></a>
@@ -32,15 +29,19 @@
                     <a href="https://api.whatsapp.com/send?phone=966509123443"  target="_blank">
                         <img src="images/whatsapp.svg" alt="whatsapp"></a>
 
-                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:8c07be11-8ee2-4fd6-9090-1f4853c43547"  target="_blank">
+                    <a href="https://drive.google.com/file/d/1GPMYrETcB6XJximxjEiMWljB_E--TeQc/view?usp=share_link"  target="_blank">
                         <img src="images/cv3.svg" alt="cv"></a>
                 </div>
             </div>
         </section>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">
             <img src="images/arrow3.svg" alt="up" width="45" height="45">
-            <!-- <i class="fa fa-arrow-up"></i> -->
+            <i class="fa fa-arrow-up"></i>
+        </button> -->
+
+        <button id="back-to-top-btn">
+            <i class="fa fa-arrow-up"></i>
         </button>
 
 <!--------------------------------------------------------------------------------------------------------------->
@@ -50,8 +51,8 @@
         <section class="about">
                 <img src="images/man.svg" alt="profile" data-aos="slide-right">
                 <div>
-                    <h2 data-aos="slide-left">Abdulmohsen Alfreh</h2>
-                    <p data-aos="slide-left">A recent computer science graduate, with experience in Data Analysis and in Application and Web UI/UX design and development.</p>
+                    <h2 data-aos="slide-up">Abdulmohsen Alfreh</h2>
+                    <p data-aos="slide-up">A recent computer science graduate, with experience in Data Analysis and in Application and Web UI/UX design and development.</p>
                 </div>
         </section>
 <!----------------------------------------------------projects---------------------------------------------------->
@@ -69,9 +70,9 @@
                     <!-- <img src="images/mobile-app.svg" alt="presentations"> -->
                 </a>
                 
-                <a href="#da">DATA ANALYSIS
+                <!-- <a href="#da">DATA ANALYSIS -->
                     <!-- <img src="images/excel.svg" alt="data analysis"> -->
-                </a>
+                <!-- </a> -->
             </div>
     </section>
 
@@ -162,18 +163,9 @@
             <br><br>
             <h3 data-aos="slide-up">2022 OCTOBER</h3>
             <p data-aos="slide-up">My most recent project was for the Graduation Project in October 2022, I developed it later in February 2023.</p>
-            <div class="container">
-                <div class="box">
-                    <img src="images/ap1-1.svg">
-                </div>
-                <div class="box">
-                    <img src="images/ap1-2.svg">
-                </div>
-                <div class="box">
-                    <img src="images/ap1-3.svg">
-                </div>
-                <div class="box">
-                    <img src="images/ap1-4.svg">
+            <div class="webcnt">
+                <div>
+                    <img src="images/web1.svg">
                 </div>
             </div>
         </div>
@@ -184,18 +176,9 @@
             <h2>OTHER WEBSITES</h2>
             <h3 data-aos="slide-up">2022 MAY</h3>
             <p data-aos="slide-up">First UI/UX I’ve designed, it was for the project of Software Engineering II course in may 2022.</p>
-            <div class="container">
-                <div class="box">
-                    <img src="images/ap2-1.svg">
-                </div>
-                <div class="box">
-                    <img src="images/ap2-2.svg">
-                </div>
-                <div class="box">
-                    <img src="images/ap2-3.svg">
-                </div>
-                <div class="box">
-                    <img src="images/ap2-4.svg">
+            <div class="webcnt">
+                <div>
+                    <img src="images/web1.svg">
                 </div>
             </div>
         </div>
@@ -227,13 +210,13 @@
     <section class="otherapps">
         <div>
             <h2>OTHER PRESENTATIONS</h2>
-            <h3 data-aos="slide-up">2018 OCTOBER</h3>
+            <!-- <h3 data-aos="slide-up">2018 OCTOBER</h3>
             <p data-aos="slide-up">First UI/UX I’ve designed, it was for the project of Software Engineering II course in may 2022.</p>
             <div class="pptcnt">
                 <video controls autoplay width="750">
-                    <source src="videos/ppt2.mp4" type="video/mp4">
+                    <source src="videos/ppt3.mp4" type="video/mp4">
                 </video>
-            </div>
+            </div> -->
             <br><br>
             <h3 data-aos="slide-up">2018 OCTOBER</h3>
             <p data-aos="slide-up">Second project I worked in was a challenge from Okoul.com in 2022 September, I’ve designed the UI/Ux then developed the app.</p>
@@ -279,7 +262,9 @@
             });
         </script>
 
-        <script>
+        <script type="text/javascript" src="js/portfolio.js"></script>
+
+        <!-- <script>
             // Get the button
             let mybutton = document.getElementById("myBtn");
             
@@ -299,6 +284,6 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
             }
-        </script>
+        </script> -->
     </body>
 </html>
