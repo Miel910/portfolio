@@ -146,13 +146,13 @@ body {
 
   #navbar h1 {
     float: left;
-    margin-left: 35px;
+    margin-left: 45px;
     color: #ACAAEB;
     font-weight: bolder;
   }
 
   #navbar img {
-    height: 55px;
+    height: 25px;
     float: right;
     margin-top: 35px;
     margin-right: 35px;
@@ -183,12 +183,13 @@ body {
     text-align: left;
     width: 30%;
     display: flex;
+    padding: 10% 1% 1% 1%;
 }
 
 .about img {
-    width: 370px;
+    width: 350px;
     opacity: 80%;
-    margin: 40% 0% 30% 0%;
+/*     margin: 0% 0% 0% 0%; */
 }
 
 .about h2 {
@@ -196,7 +197,7 @@ body {
     font-weight: 400;
     font-size: 70px;
     font-family: serif;
-    margin: 45% 0% 0% 5%;
+/*     margin: 45% 0% 0% 0%; */
 }
 
 .about p {
@@ -204,8 +205,8 @@ body {
     font-weight: 200;
     font-size: 25px;
     text-align: left;
-    margin-left: 5%;
-    margin-bottom: 30%;
+/*     margin-left: 0%; */
+/*     margin-bottom: 10%; */
 }
 
 /*-----------------------------------------------------about-----------------------------------------------------*/
@@ -359,14 +360,16 @@ body {
     background-color: #7f7f7f;
     margin: 10px auto;
     display: flex;
+    width: 60%;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
     /* justify-content: center; */
     /* box-shadow: gray; */
   }
 
-/* .pptcnt video {
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-} */
+.pptcnt img {
+    width: 100%;
+    /* box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1); */
+}
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer----------------------------------------------------*/
