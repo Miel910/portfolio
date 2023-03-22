@@ -10,7 +10,6 @@ body {
     background-image: linear-gradient(#22206C,#b071cd);
     margin: 0;
     font-family: 'Cairo', sans-serif;
-    /* background-image: url('https://png.pngtree.com/png-vector/20221122/ourmid/pngtree-abstract-blue-digital-technology-lines-diagram-png-image_6474402.png'); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
@@ -144,6 +143,11 @@ body {
     z-index: 99;
   }
 
+  nav .bg {
+    position: fixed;
+}
+
+
   #navbar h1 {
     float: left;
     margin-left: 45px;
@@ -162,7 +166,7 @@ body {
     float: right;
   }
   
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 50px) {
     #navbar {
       padding: 20px 10px !important;
     }
@@ -183,13 +187,14 @@ body {
     text-align: left;
     width: 30%;
     display: flex;
-    padding: 10% 1% 1% 1%;
+    padding: 10% 5% 1% 1%;
 }
 
 .about img {
+    /* position: fixed; */
     width: 95%;
     opacity: 80%;
-/*     margin: 0% 0% 0% 0%; */
+    /* margin: 0% 0% 0% 0%; */
 }
 
 .about h2 {
@@ -197,7 +202,8 @@ body {
     font-weight: 400;
     font-size: 70px;
     font-family: serif;
-/*     margin: 45% 0% 0% 0%; */
+    /* position: relative; */
+    /* margin: 45% 0% 0% 0%; */
 }
 
 .about p {
@@ -205,27 +211,35 @@ body {
     font-weight: 200;
     font-size: 25px;
     text-align: left;
-/*     margin-left: 0%; */
-/*     margin-bottom: 10%; */
+    /* position: relative; */
+    /* margin-left: 0%; */
+    /* margin-bottom: 10%; */
 }
 
-/*-----------------------------------------------------about-----------------------------------------------------*/
+.vl {
+    border-left: 1.5px solid rgb(255, 255, 255);
+    height: 370px;
+    opacity: 35%;
+    margin: 22% 10% 0% 10%;
+}
 
 .projects {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    /* text-align: left; */
+    /* padding-top: 50px; */
+    /* padding-bottom: 100px; */
     /* display: flex; */
+    margin-top: 50%;
 }
 
 .projects a {
     color: white;
-    text-align: center;
-    padding: 60px;
+    text-align: left;
     text-decoration: none;
     font-size: 25px;
     font-weight: 700;
-    border-radius: 4px;
+    /* margin-left: 10%; */
+    /* border-radius: 4px; */
+    /* margin-top: 100%; */
   }
 
   .projects a:hover {
@@ -300,8 +314,8 @@ body {
 .box img{
     display: block;
     width: 100%;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 45px;
+    /* box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 44px; */
 }
 
 .box:hover{
