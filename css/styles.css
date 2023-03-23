@@ -1,49 +1,21 @@
-/* Abulmohsen Alfreh */
 
-* {box-sizing: border-box;}
+/* * {box-sizing: border-box;} */
 
 html {
     scroll-behavior: smooth;
-      overflow-x: hidden;
-
+    overflow-x: hidden;
   }
 
 body {
     background-image: linear-gradient(#22206C,#b071cd);
     margin: 0;
     font-family: 'Cairo', sans-serif;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: top;
-    background-size: contain;
+    background-size: contain; */
     background-attachment: scroll;
     overflow-x: hidden;
-
 }
-
-/* html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
-    overflow-x: hidden;
-} */
-
-/* #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    border: none;
-    outline: none;
-    background-color: red;
-    cursor: pointer;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-}
-  
-#myBtn:hover {
-    fill: #555;
-    background-color: #555;
-} */
 
 /*-----------------------------------------------------button-----------------------------------------------------*/
 
@@ -119,16 +91,6 @@ body {
   animation-fill-mode: both;  
   animation-name: btnExit;
 }
-/* zoomOut */
-/* @keyframes btnExit {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-} */
 
 /* fadeOutDown */
 @keyframes btnExit {
@@ -155,13 +117,13 @@ body {
     z-index: 99;
   }
 
-  nav .bg {
+/*   nav .bg {
     position: fixed;
-}
-
+} */
 
   #navbar h1 {
     float: left;
+    position: fixed;
     margin-left: 45px;
     color: #ACAAEB;
     font-weight: bolder;
@@ -174,9 +136,9 @@ body {
     margin-right: 35px;
   }
 
-  #navbar-right {
+/*   #navbar-right {
     float: right;
-  }
+  } */
   
   @media screen and (max-width: 50px) {
     #navbar {
@@ -189,7 +151,6 @@ body {
     }
     #navbar-right {
       float: none;
-      /* width: 50%; */
     }
   }
 
@@ -199,14 +160,12 @@ body {
     text-align: left;
     width: 30%;
     display: flex;
-    padding: 10% 5% 1% 1%;
+    padding: 10% 5% 1% 5%;
 }
 
 .about img {
-    /* position: fixed; */
     width: 95%;
     opacity: 80%;
-    /* margin: 0% 0% 0% 0%; */
 }
 
 .about h2 {
@@ -214,8 +173,6 @@ body {
     font-weight: 400;
     font-size: 70px;
     font-family: serif;
-    /* position: relative; */
-    /* margin: 45% 0% 0% 0%; */
 }
 
 .about p {
@@ -223,9 +180,6 @@ body {
     font-weight: 200;
     font-size: 25px;
     text-align: left;
-    /* position: relative; */
-    /* margin-left: 0%; */
-    /* margin-bottom: 10%; */
 }
 
 .vl {
@@ -236,10 +190,6 @@ body {
 }
 
 .projects {
-    /* text-align: left; */
-    /* padding-top: 50px; */
-    /* padding-bottom: 100px; */
-    /* display: flex; */
     margin-top: 50%;
 }
 
@@ -249,9 +199,6 @@ body {
     text-decoration: none;
     font-size: 25px;
     font-weight: 700;
-    /* margin-left: 10%; */
-    /* border-radius: 4px; */
-    /* margin-top: 100%; */
   }
 
   .projects a:hover {
@@ -266,7 +213,7 @@ body {
 /*----------------------------------------------------top app-----------------------------------------------------*/
 
 .topapp {
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: center;
 }
 
@@ -274,26 +221,8 @@ body {
     color: white;
     font-size: 33px;
     font-weight: 700;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* padding-top: 3%; */
-    /* margin-bottom: 10%; */
+    margin-bottom: 8%
   }
-
-  /* --------------------------------- */
-
-/* .circles {
-    width: 10px;
-    margin: 0px auto;
-    margin-top: 100px;
-    padding-bottom: 30px;
-}
-
-.circles img {
-    width: 5px;
-    padding-bottom: 50px;
-} */
-
-/* --------------------------------- */
 
 .topapp h3 {
     color: white;
@@ -305,7 +234,6 @@ body {
     font-size: 20px;
     font-weight: 300;
     padding: 0% 10% 2% 10%;
-    /* width: 100%; */
   }
 
 .container{
@@ -326,8 +254,6 @@ body {
 .box img{
     display: block;
     width: 100%;
-    /* box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 44px; */
 }
 
 .box:hover{
@@ -350,7 +276,6 @@ body {
     font-size: 33px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    /* margin-bottom: 6%; */
   }
 
 .otherapps h3 {
@@ -363,90 +288,28 @@ body {
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 300;
-    /* padding-bottom: 1%; */
     padding: 0% 12% 1% 12%;
   }
 
 .webcnt {
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 
 .webcnt img {
     width: 65%;
-    /* padding: 2px; */
-    /* background-color: #7f7f7f; */
     margin: 10px auto;
     display: flex;
-    /* box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3); */
 }
 
 .pptcnt {
     width: fit-content;
-    /* padding: 2px; */
     background-color: #7f7f7f;
     margin: 10px auto;
     display: flex;
     width: 60%;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
-    /* justify-content: center; */
-    /* box-shadow: gray; */
   }
 
 .pptcnt img {
     width: 100%;
-    /* box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1); */
 }
-
-/*--------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------footer----------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------*/
-
-/* footer {
-    color: white;
-    padding: 30px;
-    height: 400px;
-}
-
-.subscribe {
-    text-align: center;
-    max-width: 100%;
-    margin: auto;
-}
-
-.subscribe input[type="email"] {
-    width: 40%;
-    border-radius: 50px;
-    margin-left: 29%;
-    padding: 10px;
-    color: #9B781D;
-}
-
-.address{
-    display: inline-table;
-    max-width: 30%;
-    width: 30%;
-    margin: 2% 0 2% 5%
-}
-
-.us .bold, .address .bold{
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-    padding-bottom: 4%;
-}
-
-.us p, .address p{
-    color: white;
-    font-size: 15px;
-}
-
-.media{
-    display: inline;
-    margin: 0 0 0 85%;
-}
-
-.media img{
-    margin: 0.5%;
-    width: 2%;
-    height: auto;
-} */
